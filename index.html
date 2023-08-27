@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social::app</title>
+    <link rel="stylesheet" href="./dist/css/index.css" />
+  </head>
+  <body>
+    <div class="container mt-2 mb-5">
+      <div class="row mb-5">
+        <div class="col-12">
+          <span class="fs-3 logo">Social/app</span>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-3">
+      <div class="col-12">
+        <h1>Join the conversation</h1>
+      </div>
+    </div>
+    <div class="hero py-3">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-lg-6">
+            <p class="fs-6 mb-4">
+              Sign in with you e-mail to learn and keep up with the latest and
+              greatest in the world of coding.
+            </p>
+            <form class="needs-validation mt-5" action="">
+              <div class="has-validation mb-3">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose a username.</div>
+              </div>
+              <label for="password">Password</label>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="row mt-5">
+                <div class="col-sm-3 mb-3">
+                  <button type="submit" class="btn w-100 btn-primary">
+                    Sign in
+                  </button>
+                </div>
+                <div class="col-sm-5">
+                  <a class="btn w-100 btn-secondary" href="./register.php"
+                    >Create an account</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-6 hero__img-container">
+            <img class="hero-img" src="./dist/hero-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 py-5">
+      <p>
+        Social/app is a social media platform for developers to share their
+        knowledge and connect with other developers.<br />
+        <strong
+          >This is a school project only for demonstration purposes.</strong
+        >
+      </p>
+    </div>
+  </body>
+</html>
