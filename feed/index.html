@@ -8,9 +8,18 @@
     <script src="../dist/js/main.js" type="module" defer></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand fs-3" href="/feed">Social/app</a>
+
+        <form class="col-sm-6 ms-3" action="">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
         <button
           class="navbar-toggler"
           type="button"
@@ -22,11 +31,12 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse navbar-collapse justify-content-end align-center"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarTogglerDemo01"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="/profile" role="button">
                 <div class="d-flex align-center">
@@ -43,8 +53,8 @@
       </div>
     </nav>
     <main>
-      <div class="container mt-3">
-        <div class="mt-4 p-4 bg-dark rounded">
+      <div class="container mt-4">
+        <div class="p-4 bg-light rounded">
           <form action="">
             <div class="mb-3">
               <textarea
@@ -56,11 +66,38 @@
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="#" class="btn btn-outline-secondary">Upload media</a>
+            <a href="#" class="btn btn-outline-primary">Upload media</a>
           </form>
         </div>
+      </div>
 
-        <div class="row my-5 py-3 bg-light rounded">
+      <div class="container mt-5 mb-2 col-12 text-end">
+        <input
+          type="radio"
+          class="btn-check"
+          name="options-base"
+          id="option5"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-outline-tertiary" for="option5"
+          ><i class="bi bi-sort-down"></i
+        ></label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="options-base"
+          id="option6"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-tertiary" for="option6"
+          ><i class="bi bi-sort-up"></i
+        ></label>
+      </div>
+
+      <div class="container">
+        <div class="row py-3 bg-light rounded">
           <div class="col">
             <div class="d-flex mb-1">
               <div class="profile-image-container">

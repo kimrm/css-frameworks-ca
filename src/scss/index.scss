@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Alatsi&family=Anaheim&display=swap");
 
-$body-bg: #f3f3f3;
-$body-color: #0d1b1e;
-$font-family-base: "Anaheim", sans-serif;
-$primary: #386c0b;
-$secondary: #aad922;
-$dark: #0d1b1e;
-$navbar-light-brand-color: $dark;
-
-$hero-color: $dark;
-
+@import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
