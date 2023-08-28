@@ -6,15 +6,12 @@ $font-family-base: "Anaheim", sans-serif;
 $primary: #386c0b;
 $secondary: #aad922;
 $dark: #0d1b1e;
+$navbar-light-brand-color: $dark;
 
-$hero-color: $body-color;
+$hero-color: $dark;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
-
-.logo {
-  font-family: "Alatsi", sans-serif;
-}
 
 .hero {
   background-color: $hero-color;
@@ -58,4 +55,8 @@ $hero-color: $body-color;
     height: 100%;
     @extend .rounded;
   }
+}
+
+.profile-banner {
+  height: 20rem;
 }

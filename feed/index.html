@@ -10,7 +10,7 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand fs-3 logo" href="/">Social/app</a>
+        <a class="navbar-brand fs-3" href="/feed">Social/app</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,15 +28,9 @@
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link" href="/profile" role="button">
                 <div class="d-flex align-center">
-                  <img src="../dist/profile-2.jpg" alt="profile" height="32" />
+                  <img src="../dist/profile-1.jpg" alt="profile" height="32" />
                   <span class="ms-2">Profile</span>
                 </div>
               </a>
@@ -67,9 +61,12 @@
           <div class="col">
             <div class="d-flex mb-1">
               <div class="profile-image-container">
-                <img src="../dist/profile-1.jpg" />
+                <a href="/profile"><img src="../dist/profile-1.jpg" /></a>
               </div>
-              <div class="px-3"><strong>AlexaCoders</strong> 3 hrs.</div>
+              <div>
+                <a class="btn" href="/profile"><strong>AlexaCoders</strong> </a>
+                3 hrs.
+              </div>
             </div>
             <div>
               <p>

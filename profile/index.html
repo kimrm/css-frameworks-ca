@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social/app - feed</title>
+    <link rel="stylesheet" href="../dist/css/index.css" />
+    <script src="../dist/js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fs-3 logo" href="/feed">Social/app</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="navbarTogglerDemo01"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile" role="button">
+                <div class="d-flex align-center">
+                  <img src="../dist/profile-1.jpg" alt="profile" height="32" />
+                  <span class="ms-2">Profile</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container profile-banner">
+        <img
+          class="w-100 h-100 object-fit-cover rounded"
+          src="../dist/san-fran.jpg"
+          alt=""
+        />
+      </div>
+      <div class="container mt-3">
+        <div class="col">
+          <div class="d-flex mb-1">
+            <div class="profile-image-container">
+              <img src="../dist/profile-1.jpg" />
+            </div>
+            <div class="px-3"><strong>AlexaCoders</strong></div>
+          </div>
+          <div>
+            <p>
+              I'm a web developer and I love to code. I currently work at a tech
+              startup in San Francisco. Enjoying my time here with my pug and 11
+              cats.
+              <strong>#nodejs</strong>
+              <strong>#bootstrap</strong>
+            </p>
+          </div>
+        </div>
+        <p class="d-inline-flex gap-1">
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Edit profile
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <form action="">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  value="AlexaCoders"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="bio" class="form-label">Bio</label>
+                <textarea
+                  class="form-control"
+                  id="bio"
+                  name="bio"
+                  rows="3"
+                  placeholder="Tell us about yourself..."
+                >
+I'm a web developer and I love to code. I currently work at a tech startup in San Francisco. Enjoying my time here with my pug and 11 cats.
+#nodejs #bootstrap
+                </textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
