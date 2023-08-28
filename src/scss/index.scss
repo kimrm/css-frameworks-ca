@@ -10,7 +10,7 @@ $dark: #0d1b1e;
 $hero-color: $body-color;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
 .logo {
   font-family: "Alatsi", sans-serif;
