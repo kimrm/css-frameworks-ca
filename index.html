@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social::app</title>
     <link rel="stylesheet" href="./dist/css/index.css" />
+    <script src="./js/main.js" type="module" defer></script>
   </head>
   <body>
     <div class="container mt-3 mb-5">
@@ -89,29 +90,5 @@
       </p>
       <p>&copy; 2023 - kimrune.dev</p>
     </footer>
-    <script>
-      (() => {
-        "use strict";
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll(".needs-validation");
-
-        // Loop over them and prevent submission
-        Array.from(forms).forEach((form) => {
-          form.addEventListener(
-            "submit",
-            (event) => {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
   </body>
 </html>
