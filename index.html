@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social::app</title>
     <link rel="stylesheet" href="./dist/css/index.css" />
+    <script src="./js/main.js" type="module" defer></script>
   </head>
   <body>
     <div class="container mt-3 mb-5">
@@ -32,10 +33,9 @@
                 <label for="email" class="form-label">E-mail</label>
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control mb-3"
                   id="email"
                   name="email"
-                  aria-describedby="emailHelp"
                   placeholder="Email"
                   required
                 />
@@ -46,15 +46,17 @@
 
               <div class="has-validation mb-3">
                 <label for="password" class="form-label">Password</label>
-                <div class="mb-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    name="password"
-                    placeholder="Password"
-                    required
-                  />
+                <input
+                  type="password"
+                  class="form-control mb-3"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  minlength="8"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter your password (min 8 characters)
                 </div>
               </div>
 
@@ -72,8 +74,12 @@
               </div>
             </form>
           </div>
-          <div class="col-6 hero__img-container">
-            <img class="hero-img" src="./dist/images/hero-img.jpg" alt="" />
+          <div class="col-lg-6 position-relative hero__img-container">
+            <img
+              class="position-absolute d-none d-lg-block w-100 rounded"
+              src="./assets/images/hero-img.jpg"
+              alt="Woman working on a computer"
+            />
           </div>
         </div>
       </div>
@@ -83,35 +89,11 @@
         Social/app is a social media platform for developers to share their
         knowledge and connect with other developers.<br />
         <strong
-          >This is site is part of a school project and is only for
-          demonstration purposes.</strong
+          >This site is part of a school project and is only for demonstration
+          purposes.</strong
         >
       </p>
       <p>&copy; 2023 - kimrune.dev</p>
     </footer>
-    <script>
-      (() => {
-        "use strict";
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll(".needs-validation");
-
-        // Loop over them and prevent submission
-        Array.from(forms).forEach((form) => {
-          form.addEventListener(
-            "submit",
-            (event) => {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
   </body>
 </html>
