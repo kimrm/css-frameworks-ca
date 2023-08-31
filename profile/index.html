@@ -39,7 +39,12 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/profile" role="button">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/profile"
+                role="button"
+              >
                 <div class="d-flex align-center">
                   <div class="profile-icon-container">
                     <img
@@ -51,6 +56,9 @@
                   <span class="ms-2">Profile</span>
                 </div>
               </a>
+            </li>
+            <li class="nav-item">
+              <a href="/feed" class="nav-link">Feed</a>
             </li>
             <li class="nav-item">
               <a href="/" class="nav-link">Log out</a>
