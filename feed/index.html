@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A social network for developers" />
+    <title>Social/app - feed</title>
+    <link rel="stylesheet" href="../dist/css/index.css" />
+    <script src="../js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fs-3" href="/feed">Social/app</a>
+
+        <form class="col-sm-6 ms-3" action="">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarToggler"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile" role="button">
+                <div class="d-flex align-center">
+                  <div class="profile-icon-container">
+                    <img
+                      class="object-fit-cover rounded w-100 h-100"
+                      src="../../assets/images/profile-1.jpg"
+                      alt="Profile picture icon"
+                    />
+                  </div>
+                  <span class="ms-2">Profile</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/feed" class="nav-link active" aria-current="page"
+                >Feed</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container mt-4">
+        <div class="p-4 bg-light rounded">
+          <form action="">
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="post"
+                name="post"
+                rows="3"
+                placeholder="Tell us about your day..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="#" class="btn btn-outline-primary">Upload media</a>
+          </form>
+        </div>
+      </div>
+
+      <div class="container mt-5 mb-2">
+        <input
+          type="radio"
+          class="btn-check"
+          name="sort-check"
+          id="desc"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-outline-tertiary" for="desc"
+          ><i class="bi bi-sort-down"></i
+        ></label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="sort-check"
+          id="asc"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-tertiary" for="asc"
+          ><i class="bi bi-sort-up"></i
+        ></label>
+      </div>
+
+      <div class="container">
+        <div class="row py-3 bg-light rounded">
+          <div class="col">
+            <div class="d-flex mb-1">
+              <div class="profile-icon-container">
+                <a href="/profile"
+                  ><img
+                    class="object-fit-cover rounded w-100 h-100"
+                    src="../../assets/images/profile-1.jpg"
+                /></a>
+              </div>
+              <div>
+                <a class="btn" href="/profile"><strong>AlexaCoders</strong> </a>
+                3 hrs.
+              </div>
+            </div>
+            <div>
+              <p>
+                Switched to a new DB system and the performance improvements are
+                off the charts! Anyone else tried it? Looking for best
+                practices.
+                <strong>#DatabaseDynamos</strong>
+                <strong>#EfficiencyMatters</strong>
+              </p>
+              <img
+                src="../../assets/images/computer-screen.jpg"
+                alt="post"
+                class="w-50 rounded"
+              />
+
+              <div class="d-flex mt-3 g-3">
+                <div><i class="bi bi-heart"></i> 5</div>
+                <div class="px-5"><i class="bi bi-chat-left"></i> 10</div>
+                <div><i class="bi bi-share"></i> 19</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5 py-3 bg-light rounded">
+          <div class="col">
+            <div class="d-flex mb-1">
+              <div class="profile-icon-container">
+                <img
+                  class="object-fit-cover rounded w-100 h-100"
+                  src="../../assets/images/profile-2.jpg"
+                />
+              </div>
+              <div class="px-3"><strong>JavaJill </strong> 3 hrs.</div>
+            </div>
+            <div>
+              <p>
+                Just refactored this piece of code, cutting down the execution
+                time by half! 🚀 Any other <strong>#PythonGurus</strong> have
+                tips for optimization?
+                <strong>#CodeOptimization</strong>
+                <strong>#DevLife</strong>
+              </p>
+
+              <div class="d-flex g-3">
+                <div><i class="bi bi-heart"></i> 5</div>
+                <div class="px-5"><i class="bi bi-chat-left"></i> 10</div>
+                <div><i class="bi bi-share"></i> 19</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5 py-3 bg-light rounded">
+          <div class="col">
+            <div class="d-flex mb-1">
+              <div class="profile-icon-container">
+                <img
+                  class="object-fit-cover rounded w-100 h-100"
+                  src="../../assets/images/profile-3.jpg"
+                />
+              </div>
+              <div class="px-3"><strong>NodeNerd</strong> 3 hrs.</div>
+            </div>
+            <div>
+              <p>
+                Finally got this feature up and running after days of debugging!
+                Goes to show, perseverance is key! 💪🔍
+                <strong>#JavaBeans</strong>
+                <strong>#BugHunter</strong>
+                <strong>#FeatureRelease</strong>
+              </p>
+
+              <div class="d-flex g-3">
+                <div><i class="bi bi-heart"></i> 5</div>
+                <div class="px-5"><i class="bi bi-chat-left"></i> 10</div>
+                <div><i class="bi bi-share"></i> 19</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5 py-3 bg-light rounded">
+          <div class="col">
+            <div class="d-flex mb-1">
+              <div class="profile-icon-container">
+                <img
+                  class="object-fit-cover rounded w-100 h-100"
+                  src="../../assets/images/profile-4.jpg"
+                />
+              </div>
+              <div class="px-3"><strong>ReactRicky</strong> 3 hrs.</div>
+            </div>
+            <div>
+              <p>
+                Feeling super productive today! Dropped 300 lines of legacy code
+                and introduced 50 efficient ones. Less is more! ✂️📈
+                <strong>#DatabaseDynamos</strong>
+                <strong>#EfficiencyMatters</strong>
+              </p>
+
+              <div class="d-flex g-3">
+                <div><i class="bi bi-heart"></i> 5</div>
+                <div class="px-5"><i class="bi bi-chat-left"></i> 10</div>
+                <div><i class="bi bi-share"></i> 19</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5 py-3 bg-light rounded">
+          <div class="col">
+            <div class="d-flex mb-1">
+              <div class="profile-icon-container">
+                <img
+                  class="object-fit-cover rounded w-100 h-100"
+                  src="../../assets/images/profile-1.jpg"
+                />
+              </div>
+              <div class="px-3"><strong>DataDaisy</strong> 3 hrs.</div>
+            </div>
+            <div>
+              <p>
+                Switched to a new DB system and the performance improvements are
+                off the charts! Anyone else tried it? Looking for best
+                practices.
+                <strong>#DatabaseDynamos</strong>
+                <strong>#EfficiencyMatters</strong>
+              </p>
+
+              <div class="d-flex g-3">
+                <div><i class="bi bi-heart"></i> 5</div>
+                <div class="px-5"><i class="bi bi-chat-left"></i> 10</div>
+                <div><i class="bi bi-share"></i> 19</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
